@@ -53,7 +53,7 @@ public class ChatActivity extends AppCompatActivity {
     private void connectToServer() {
         new Thread(() -> {
             try {
-                socket = new Socket("172.30.1.23", 6510); // 채팅 서버 IP와 포트
+                socket = new Socket("IP", 6510); // 채팅 서버 IP와 포트
                 writer = new PrintWriter(socket.getOutputStream(), true);
                 reader = new BufferedReader(new InputStreamReader(socket.getInputStream()));
 
