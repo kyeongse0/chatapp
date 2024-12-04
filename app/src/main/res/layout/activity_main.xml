@@ -1,0 +1,33 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 게시물 리스트 -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/writePostButton"
+        android:clipToPadding="false"
+        android:padding="8dp" />
+
+    <!-- 글쓰기 버튼 -->
+    <Button
+        android:id="@+id/writePostButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:text="글쓰기"
+        android:layout_margin="16dp" />
+
+    <!-- 채팅 목록 버튼 -->
+    <Button
+        android:id="@+id/chatListButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:text="채팅"
+        android:layout_margin="16dp" />
+</RelativeLayout>
